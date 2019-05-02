@@ -172,7 +172,6 @@ app.route('/response')
             if (err) res.send(err);
             res.json(response);
         })
-    });
 }).on("error", (err) => {
     console.log("Error: " + err.message);
 });
