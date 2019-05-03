@@ -166,7 +166,7 @@ https.get('https://itunes.apple.com/rss/customerreviews/id=407358186/sortBy=most
     console.log("Error: " + err.message);
 });
 
-app.route('/response')
+/*app.route('/response')
     .get(authJwtController.isAuthenticated, function (req, res) {
         Response.find(function (err, response) {
             if (err) res.send(err);
@@ -174,7 +174,7 @@ app.route('/response')
         })
 }).on("error", (err) => {
     console.log("Error: " + err.message);
-});
+});*/
 
 
 app.use('/', router);
